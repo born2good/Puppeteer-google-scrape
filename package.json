@@ -2,7 +2,7 @@
   "name": "pupeteer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "newHope.js",
   "scripts": {
     "start": "node newHope.js"
   },
