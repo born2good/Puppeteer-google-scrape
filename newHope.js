@@ -29,7 +29,7 @@ const client = new Client({
     user: "kmpirslfxqkekw",
     password: "935ee2dec90c8204f1780f520e5ec014dcdf93dc58357026da0ae17b99c5c6d2",
     host: "ec2-54-145-224-156.compute-1.amazonaws.com",
-    port: 5432,
+    port: process.env.PORT || 5432,
     database: "d22kk4lmadgg7c"
 })
 
