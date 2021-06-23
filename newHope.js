@@ -32,6 +32,15 @@ const client = new Client({
     port: process.env.PORT || 5432,
     database: "d22kk4lmadgg7c"
 })
+const express = require("express");
+const app = express();
+const conPort = process.env.PORT || "3000";
+
+app.get("/", (req,res) => {
+  console.log("Uspjeh");
+})
+
+app.listen(conPort, () => console.log("serveer started on port > " , conPort));
 
 const query = {
     text: 'SELECT * FROM test_terms ORDER BY search_term ASC',
